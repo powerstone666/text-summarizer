@@ -14,7 +14,10 @@ function Text() {
       setTextColor("green");
     }
   }, [text]);
-
+const clear = () => {
+   setOutput("");
+   setText("");
+}
    const summarizing = async () => {
     try{
         if(text.length>=200){
@@ -56,7 +59,7 @@ function Text() {
                   type="text"
                   className="h-4/5 w-full p-10 bg-transparent placeholder:text-bold text-xl focus:outline-none "
                   placeholder="Enter the text here minimum 200 words  "
-                  onChange={(e) => changing(e)}
+                  onChange={(e) => changing(e)} value={text}
                />
               <span className="text-xl justify-end flex m-8 mr-10 text-blue-900" >
                <h1 style={{ color: textColor }}>{text.length}/200</h1>
@@ -68,7 +71,8 @@ function Text() {
          </div>
          </div>
          <div className="flex justify-center">
-            <button className="bg-orange-400 hover:bg-orange-500 hover:text-white h-12 w-40 font-bold text-xl mb-5" onClick={summarizing}>Summarize</button>
+            <button className="bg-orange-400 hover:bg-orange-600 hover:text-white h-12 w-40 font-bold text-xl mb-5 rounded-lg" onClick={summarizing}>Summarize</button>
+            <button className="bg-purple-400 hover:bg-purple-700 hover:text-white h-12 w-40 font-bold text-xl mb-5 ml-4 rounded-lg" onClick={clear}>Clear</button>
          </div>
          <div>
             <section className="h-80 bg-green-50">
