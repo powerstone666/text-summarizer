@@ -43,8 +43,8 @@ function Text() {
    };
 
    return (
-      <div className="bg-green-50 h-screen w-screen overflow-x-hidden">
-         <nav className="h-24 bg-green-400 ">
+      <div className="bg-white h-screen w-screen overflow-x-hidden">
+         <nav className="h-24 bg-purple-600 ">
             <h1 className="text-4xl text-white text-center py-6">AI Text Summarizer App</h1>
          </nav>
          <p className="p-4 f text-xl text-center mt-8">Welcome to the AI Text Summarizer App! This app leverages the power of Artificial Intelligence APIs to provide concise summaries of long texts. Whether you have a lengthy article, research paper, or any other text document that you want to summarize quickly, our app can assist you.</p>
@@ -54,7 +54,7 @@ function Text() {
             <div className="bg-gray-50 h-full w-1/2 mr-5 rounded border-2 border-black">
                <textarea
                   type="text"
-                  className="h-4/5 w-full p-10 bg-transparent placeholder:text-bold text-xl focus:border-green-800 focus:outline-none "
+                  className="h-4/5 w-full p-10 bg-transparent placeholder:text-bold text-xl focus:outline-none "
                   placeholder="Enter the text here minimum 200 words  "
                   onChange={(e) => changing(e)}
                />
@@ -63,12 +63,12 @@ function Text() {
                </span>
             </div>
             <div className="bg-white h-full w-1/2 rounded border-2 border-black">
-               <h1 className="p-10 text-orange-900">{output}</h1>
+               <h1 className="p-10 text-orange-900 text-xl">{output}</h1>
             </div>
          </div>
          </div>
          <div className="flex justify-center">
-            <button className="bg-purple-400 hover:bg-purple-700 h-12 w-40 font-bold text-xl" onClick={summarizing}>Summarize</button>
+            <button className="bg-orange-400 hover:bg-orange-500 hover:text-white h-12 w-40 font-bold text-xl mb-5" onClick={summarizing}>Summarize</button>
          </div>
          <div>
             <section className="h-80 bg-green-50">
