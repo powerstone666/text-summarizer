@@ -3,7 +3,7 @@ import myself from "./assets/learning.png";
 function Text() {
    const [text, setText] = useState("");
    const [output, setOutput] = useState("");
-   const [textColor, setTextColor] = useState("black");
+   const [textColor, setTextColor] = useState("green");
    const changing = (e) => {
       setText(e.target.value);
    };
@@ -11,7 +11,7 @@ function Text() {
     if (text.length > 200) {
       setTextColor("red");
     } else {
-      setTextColor("black");
+      setTextColor("green");
     }
   }, [text]);
 
