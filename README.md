@@ -10,8 +10,8 @@ Welcome to the AI Text Summarizer App! This application allows you to summarize 
 - Easy-to-use interface for entering and viewing text summaries.
 
 ## Demo 📸
+<img src="Screenshot (141).png" alt="AI text summarize srceenshot" alt="AI text summarize srceenshot">
 
-![Demo Image](demo.png)
 
 ## Getting Started 🚀
 
